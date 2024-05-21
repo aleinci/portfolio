@@ -1,0 +1,330 @@
+.header-container{
+    position: relative;
+    background: rgb(79,70,229);
+    background: linear-gradient(304deg, rgba(79,70,229,1) 0%, rgba(79,70,229,1) 40%, rgba(255,255,255,1) 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    text-shadow: -1px 1px 0 white,
+   1px 1px 0 white,
+   1px -1px 0 white,
+   -1px -1px 0 white;
+}
+
+.header-row{
+    width: 70%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-presentation{
+    z-index: 1;
+    font-weight: 500;
+}
+
+.header-presentation p {
+    color:#777;
+}
+
+.header-particle-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: relative;
+    color: white;
+}
+
+.header-img-container{
+    position: absolute;
+    width: 70px;
+    
+}
+.html{
+    bottom:291px;
+    right:-99px;
+    transform: scale(1.3);
+}
+.html > img{
+    animation: bouncing 4s ease-in-out infinite;
+}
+
+.css{
+    bottom: 181px;
+    right: 51px;
+    transform: scale(2.3);
+}
+.css > img{
+    animation: bouncing 6s ease-in-out infinite;
+}
+
+.js{
+    top: -90px;
+    left: 190px;
+    transform: scale(2.5);
+}
+.js > img {
+    animation: bouncing 8s ease-in-out infinite;
+}
+
+.react{
+    transform: scale(4); 
+    top: 135px;
+    left: 0;
+}
+.react > img{
+    animation: ReactAnim 11s ease-in-out infinite;
+}
+
+.header-img-container img{
+    width: 100%;
+}
+
+
+/*animation name*/
+
+.header-myName{
+    display: flex;
+    color: rgb(79,70,229);
+    font-size: 4rem;
+   
+}
+
+.header-myName0{
+    animation: jump 3s ease-in-out infinite;
+    animation-delay: 0.1s;
+}
+.header-myName1{
+    animation: jump 3s ease-in-out infinite;
+    animation-delay: 0.2s;
+}
+.header-myName2{
+    animation: jump 3s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+.header-myName3{
+    animation: jump 3s ease-in-out infinite;
+    animation-delay: 0.4s;
+}
+.header-myName4{
+    animation: jump 3s ease-in-out infinite;
+    animation-delay: 0.5s;
+}
+.header-myName5{
+    animation: jump 3s ease-in-out infinite;
+    animation-delay: 0.6s;
+}
+.header-myName6{
+    animation: jump 3s ease-in-out infinite;
+    animation-delay: 0.7s;
+}
+.header-myName7{
+    animation: jump 3s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+.header-myName8{
+    animation: jump 3s ease-in-out infinite;
+    animation-delay: 0.9s;
+}
+
+@keyframes jump {
+
+    80% {transform:translateY(0px)}
+    90% {transform:translateY(-10px)}
+    100% {transform:translateY(0px)}
+}
+
+@keyframes bouncing {
+    0%{transform: translateY(-15px);}
+    50%{transform: translateY(15px);}
+    100%{transform: translateY(-15px);}
+}
+
+@keyframes ReactAnim {
+    0%{transform: translateY(-15px) rotateZ(0deg) }
+    50%{transform: translateY(15px) rotateZ(360deg) }
+    100%{transform: translateY(-15px) rotateZ(0deg) }
+}
+
+@media screen and (min-width: 600px) {
+    .header-container{
+        height: 100vh;
+        background: linear-gradient(304deg, rgba(79,70,229,1) 0%, rgba(79,70,229,1) 40%, rgba(255,255,255,1) 40%);
+    }
+
+    .header-row{
+        width: 60%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .html{
+        transform: scale(0.9);
+        bottom: 130px;
+        right: 160px;
+    }
+    
+    .css{
+        transform: scale(1.5);
+        right: -90px;
+        bottom: 70px;
+    }
+    
+    .js{
+        transform: scale(1.5);
+        left:-30px;
+        top:100px;
+    }
+    
+    .react{
+        transform: scale(3);
+        left: -300px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header-container{
+        height: 70vh;
+        background: linear-gradient(304deg, rgba(79,70,229,1) 0%, rgba(79,70,229,1) 40%, rgba(255,255,255,1) 40%);
+    }
+
+    .header-container h1{
+        font-size: 2.5rem;
+    }
+
+    .header-container p {
+        font-size: 1.1rem;
+    }
+
+    .header-myName{
+        font-size: 4.5rem;
+    }
+
+    .header-row{
+        width: 60%;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .html{
+        bottom:201px;
+        right:-99px;
+        transform: scale(1.2);
+    }
+    
+    .css{
+        bottom: 101px;
+        right: 51px;
+        transform: scale(1.9);
+    }
+    
+    .js{
+        left: 200px;
+        transform: scale(1.9);
+    }
+    
+    .react{
+        transform: scale(3.3); 
+        top: 195px;
+        left: 0px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header-container{
+        height: 70vh;
+        background: linear-gradient(304deg, rgba(79,70,229,1) 0%, rgba(79,70,229,1) 40%, rgba(255,255,255,1) 40%);
+    }
+
+    .header-container h1{
+        font-size: 3rem;
+    }
+
+    .header-container p {
+        font-size: 1.3rem;
+    }
+
+    .header-myName{
+        font-size: 5.5rem;
+    }
+
+    .header-row{
+        width: 60%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .html{
+        bottom:201px;
+        right:-99px;
+        transform: scale(1.2);
+    }
+    
+    .css{
+        bottom: 101px;
+        right: 51px;
+        transform: scale(2.2);
+    }
+    
+    .js{
+        left: 350px;
+        transform: scale(2.2);
+    }
+    
+    .react{
+        transform: scale(3.6); 
+        top: 195px;
+        left: 50px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header-container{
+        height: 70vh;
+        background: linear-gradient(304deg, rgba(79,70,229,1) 0%, rgba(79,70,229,1) 40%, rgba(255,255,255,1) 40%);
+    }
+    
+    .header-container h1{
+        font-size: 3rem;
+    }
+
+    .header-container p {
+        font-size: 1.3rem;
+    }
+
+    .header-myName{
+        font-size: 5.5rem;
+    }
+
+    .header-row{
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .html{
+        bottom:251px;
+        right:-99px;
+    }
+    
+    .css{
+        bottom: 141px;
+        right: 51px;
+        transform: scale(2.3);
+    }
+    
+    .js{
+        left: 500px;
+        transform: scale(2.5);
+    }
+    
+    .react{
+        transform: scale(4); 
+        top: 195px;
+        left: auto;
+    }
+}

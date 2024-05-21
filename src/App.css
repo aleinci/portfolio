@@ -1,0 +1,31 @@
+*{
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.body-info-container {
+  position: relative;
+  width: 100%;
+}
+.body-info{
+  position: relative;
+  width: 85%;
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.body-info h2 {
+  color: rgb(79 70 229);
+}
+
+.body-info > canvas{
+  z-index: -1;
+}
+
+
+
+

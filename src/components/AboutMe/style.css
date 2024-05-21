@@ -1,0 +1,57 @@
+.about-me-container{
+    margin-top: 8rem;
+    background: white;
+}
+
+.about-me-container h2{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.about-me-info{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    box-shadow: 0px 0px 3px #777;
+    padding: 0.5rem;
+}
+
+
+
+.about-me-img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.about-me-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.about-me-text{
+    width: 80%;
+    color:#777;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+@media screen and (min-width: 600px) {
+    .about-me-info{
+        width: 85%;
+        padding: 2rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .about-me-info{
+        width: 85%;
+        flex-direction: row;
+    }
+}

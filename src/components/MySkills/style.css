@@ -1,0 +1,58 @@
+.skill-container{
+    background: white;
+}
+
+.platzi{
+    color:#0ae98a;
+    font-weight: 700;
+}
+
+.skill-tags-container{
+    margin-left: 2rem;
+}
+  
+.tag-html, .tag-css, .tag-js, .tag-react{
+    font-weight:500;
+    border-radius: 5px;
+    padding: 2px 4px;
+    margin-right: 4px;
+}
+  
+.tag-html{
+    background: #e5532c;
+    color:white;
+}
+
+.tag-css{
+    background: #3d9dd7;
+    color:white;
+}
+
+.tag-js{
+    background: #f4e225;
+    color:black;
+}
+
+.tag-react{
+    background: #3f4657;
+    color:#08d8fe;
+}
+
+.skill-container h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+
+.skill-container h2 {
+    color: rgb(79 70 229);
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.skill-curso-container p{
+    color:#777;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
