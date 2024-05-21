@@ -6,7 +6,7 @@ const AboutMe = () => {
             <h2>Sobre mi</h2>
             <div className="about-me-info">
                 <div className="about-me-img">
-                    <img src="/assets/me.png" alt="Foto sobre mi" />
+                    <img src="assets/me.png" alt="Foto sobre mi" />
                 </div>
                 <div className="about-me-text">
                     <p>

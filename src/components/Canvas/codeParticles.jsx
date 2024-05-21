@@ -1,5 +1,5 @@
 let imglight = new Image();
-imglight.src="/assets/light.png";
+imglight.src="assets/light.png";
 
 const randomCode = () =>{
     const textCode = ["function sum(num1, num2){ return num1 + num2 }", "let name = 'Alejandro'", '<script src="main.js" />', "<head></head>", "<ul></ul>", "<body>", '<a href="#">Link</a>', "<h1>PORTFOLIO</h1>", "<html>", "<div>", "<p>Hello world</p>", '<img src="/logo.png" alt="logo" />', "if (Input.mouseFire) {ChangeColor()}"]

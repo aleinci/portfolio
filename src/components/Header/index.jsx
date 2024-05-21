@@ -21,16 +21,16 @@ const Header = () => {
                 <div className='header-particle-container'>
                     <figure>
                         <div className="header-img-container html">
-                            <img src="/assets/html.png" alt="" />
+                            <img src="assets/html.png" alt="" />
                         </div>
                         <div className="header-img-container css">
-                            <img src="/assets/css.png" alt="" />
+                            <img src="assets/css.png" alt="" />
                         </div>
                         <div className="header-img-container js">
-                            <img src="/assets/js.png" alt="" />
+                            <img src="assets/js.png" alt="" />
                         </div>
                         <div className="header-img-container react">
-                            <img src="/assets/react.png" alt="" />
+                            <img src="assets/react.png" alt="" />
                         </div>
                     </figure>
                 </div>

@@ -30,12 +30,12 @@ const Navbar = () =>{
         <nav className='nav-container'>
             <div onClick={() => setIsOpenNav(true)} className={`${isOpenNav ? 'hidden' : ''} navbar-open`}>
                 
-                 <img className='navbar-open-close-button' src = "/assets/menu.svg" alt="menu icon"/>
+                 <img className='navbar-open-close-button' src = "assets/menu.svg" alt="menu icon"/>
             </div>
 
             <div className={`${!isOpenNav ? 'hidden' : ''} navbar`}>
                 <div className='navbar-close'>
-                     <img onClick={() => setIsOpenNav(false)} className='navbar-open-close-button' src = "/assets/close.svg" alt="close icon"/>
+                     <img onClick={() => setIsOpenNav(false)} className='navbar-open-close-button' src = "assets/close.svg" alt="close icon"/>
                 </div>
                 <ul className='navbar-list'>
                     <li>
