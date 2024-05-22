@@ -2,7 +2,8 @@ let imglight = new Image();
 imglight.src="assets/light.png";
 
 const randomCode = () =>{
-    const textCode = ["function sum(num1, num2){ return num1 + num2 }", "let name = 'Alejandro'", '<script src="main.js" />', "<head></head>", "<ul></ul>", "<body>", '<a href="#">Link</a>', "<h1>PORTFOLIO</h1>", "<html>", "<div>", "<p>Hello world</p>", '<img src="/logo.png" alt="logo" />', "if (Input.mouseFire) {ChangeColor()}"]
+    // const textCode = ["function sum(num1, num2){ return num1 + num2 }", "let name = 'Alejandro'", '<script src="main.js" />', "<head></head>", "<ul></ul>", "<body>", '<a href="#">Link</a>', "<h1>PORTFOLIO</h1>", "<html>", "<div>", "<p>Hello world</p>", '<img src="/logo.png" alt="logo" />', "if (Input.mouseFire) {ChangeColor()}"]
+    const textCode = ["0", "1"]
     return textCode[Math.floor(Math.random()* textCode.length - 0)]
 }
 const random = (min, max) =>{
@@ -17,12 +18,20 @@ const drawParticleCode = (particle, canvas, context) => {
     for(let i in particle){
         let j = particle[i]
 
+
         context.save();
         context.imageSmoothingEnabled = false;
         context.fillStyle = "white";
         context.font = j.size + "px Arial";
         context.fillText(j.text, j.x, j.y);
         context.restore();
+
+        j.textChange.current++;
+
+        if(j.textChange.current >= j.textChange.end){
+            j.text = randomCode();
+            j.textChange.current = 0;
+        }
 
         j.x -= (j.speed * 0.5)
 
@@ -34,13 +43,14 @@ const drawParticleCode = (particle, canvas, context) => {
 }
 
 const createParticleCode = (particle, canvas) => {
-    if(Math.floor(Math.random()*100) < 2){
+    if(Math.floor(Math.random()*100) < 30){
         particle.push({
             x:canvas.width,
             y:random(0, canvas.height),
             text:randomCode(),
             size:random(12,22),
             speed:random(1,3),
+            textChange:{current:0, end:random(2,5)},
             death:{current:0, end:random(8,15)}
         })
     }
