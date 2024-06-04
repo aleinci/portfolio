@@ -13,6 +13,19 @@ const projectInfo = [
         ]
     },
     {
+        title: "Weather App",
+        description:"aplicacion para saber el clima",
+        image: "assets/weather.png",
+        urlPage: "https://aleinci.github.io/weather/",
+        urlGit: "https://github.com/aleinci/weather",
+        tags:[
+            "html",
+            "css",
+            "js",
+            "react"
+        ]
+    },
+    {
         title: "Relaxing todo list",
         description:"aplicacion de TODO list",
         image: "assets/todo.png",
@@ -29,7 +42,7 @@ const projectInfo = [
         title: "Shopi",
         description:"proyecto practica de un E-commerce",
         image: "assets/shopi.png",
-        urlPage: "https://flourishing-pavlova-52ae3c.netlify.app/",
+        urlPage: "https://aleinci.github.io/shopi/",
         urlGit: "https://github.com/aleinci/shopi",
         tags:[
             "html",
