@@ -4,7 +4,7 @@ const projectInfo = [
         description:"Una recreacion de Elsword page",
         image: "assets/elsword.png",
         urlPage: "https://aleinci.github.io/elsword/",
-        urlGit: "",
+        urlGit: "https://github.com/aleinci/elsword/tree/repositorio",
         tags:[
             "html",
             "css",
@@ -23,6 +23,20 @@ const projectInfo = [
             "css",
             "js",
             "react"
+        ]
+    },
+    {
+        title: "My Games",
+        description:"mi pequeña biblioteca de minijuegos",
+        image: "assets/my-games.jpg",
+        urlPage: "https://alejandro-games.000webhostapp.com/games/",
+        urlGit: "https://github.com/aleinci/my-games",
+        tags:[
+            "html",
+            "css",
+            "js",
+            "php",
+            "mysql"
         ]
     },
     {
